@@ -9,9 +9,9 @@
     Last updated: Saturday 23 March 2024
 
     EXAMPLE OF USAGE:
-    python correct-image-distortion.py --input_calibration_parameters calibration-parameters/calibration_data.json \
+    python3 correct-image-distortion.py --input_calibration_parameters calibration-parameters/calibration_data.json \
     --path_to_distorted_images distorted-images-car/ \
-    --format_of_distorted_images JPG \
+    --format_of_distorted_images png \
     --path_to_undistorted_images undistorted-images-car/
     
     TODO:
