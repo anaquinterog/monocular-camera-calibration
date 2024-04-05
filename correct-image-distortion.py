@@ -10,7 +10,7 @@
 
     EXAMPLE OF USAGE:
     python3 correct-image-distortion.py --input_calibration_parameters calibration-parameters/calibration_data.json \
-    --path_to_distorted_images distorted-images-car/ \
+    --path_to_distorted_images sample-calibration-images/ \
     --format_of_distorted_images png \
     --path_to_undistorted_images undistorted-images-car/
     
