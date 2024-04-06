@@ -115,6 +115,7 @@ def open_webcam():
 
         if k == ord(' '):
             F = True
+            ##PARA CERRAR FIGURA!!!!!!
         if k == ord('q'):
             break
 
@@ -126,6 +127,7 @@ def open_webcam():
                 if i>0:
                     cv2.line(frame,(CoordX[i-1],CoordY[i-1]),(CoordX[i],CoordY[i]),(0,255,0),10)    
             if F == True:
+                #CI3RRA FIGURA
                 cv2.line(frame,(CoordX[len(CoordX)-1],CoordY[len(CoordY)-1]),(CoordX[0],CoordY[0]),(0,255,0),10)
                 print("FLAG TRUE")
                 
