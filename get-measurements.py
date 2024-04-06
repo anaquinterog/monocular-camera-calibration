@@ -23,7 +23,7 @@ import cv2
 import math
 import json
 
-F = False
+F = False 
 
 #ARRYAS
 CoordX=[]
@@ -92,6 +92,8 @@ def mouse_callback(event, x, y, flags, param):
       
 
 def open_webcam():
+    global F 
+
     # Open the default camera (index 0)
     cap = cv2.VideoCapture(0)
 
@@ -111,8 +113,8 @@ def open_webcam():
 
         k = cv2.waitKey(1) 
 
-      #  if k == ord('N'):
-          #  F = True
+        if k == ord(' '):
+            F = True
         if k == ord('q'):
             break
 
@@ -124,7 +126,7 @@ def open_webcam():
                 if i>0:
                     cv2.line(frame,(CoordX[i-1],CoordY[i-1]),(CoordX[i],CoordY[i]),(0,255,0),10)    
             if F == True:
-                cv2.line(frame,(CoordX[len(CoordX)],CoordY[len(CoordY)]),(CoordX[0],CoordY[0]),(0,255,0),10)
+                cv2.line(frame,(CoordX[len(CoordX)-1],CoordY[len(CoordY)-1]),(CoordX[0],CoordY[0]),(0,255,0),10)
                 print("FLAG TRUE")
                 
 
